@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+body{
+font-family: 'Playfair Display', serif;
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+
+nav{
+margin: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+
+
+
+}
+
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: white;
+position: sticky;
+top: 0;
+}
+
+
+li{
+height: 25px;
+float: left;
+margin-right: 1px solid #cd202b;
+border-right: 1px solid #cd202b;
+padding: 0 12px;
+
+}
+
+li:last-child{
+border-right: none;
+margin-right: 1px solid #cd202b;
+margin-inline-end: 1px solid #cd202b;
+
+}
+
+li a{
+text-decoration: none;
+color: #ccc;
+font: 25px/1 'Roboto', sans-serif;
+text-transform: uppercase;
+transition: all 0.3s ease;
+}
+
+li a:hover{
+color: #cd202b;
+}
+
+li.active a{
+font-weight: bold;
+color: #333;
+}
+
+
+
+h1{
+font-size: 3.2em;
+font-family: 'Kanit', sans-serif;
+display: block;
+text-align: center;
+color: #111111;
+letter-spacing: -1px;
+word-spacing: -2px;
+}
+
