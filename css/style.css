@@ -28,6 +28,9 @@ overflow: hidden;
 background-color: white;
 position: sticky;
 top: 0;
+outline: 0.5em solid darkred; /*the type of border for the box around the navigation bar and the size of the border line and the colour*/
+padding: 0.5em; /*this creates space between navigation buttons and the border*/
+outline-offset: 0.5em;
 }
 
 
@@ -52,7 +55,7 @@ text-decoration: none;
 color: #ccc;
 font: 25px/1 'Roboto', sans-serif;
 text-transform: uppercase;
-transition: all 0.3s ease;
+transition: all 0.6s ease;
 }
 
 li a:hover{
