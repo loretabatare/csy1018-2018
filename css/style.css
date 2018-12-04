@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Kanit');
 body{
+height: 50%;
+margin: 0;
 font-family: 'Playfair Display', serif;
+font-size: 1.3em;
+background-color: #c4cac9;
 }
 
 *{
@@ -9,15 +13,13 @@ margin: 0;
 padding: 0;
 }
 
-nav{
-margin: 50px;
+nav {
+margin: 30px;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: row;
-
-
-
+background: none;
 }
 
 ul{
@@ -25,26 +27,23 @@ list-style-type: none;
 margin: 0;
 padding: 0;
 overflow: hidden;
-background-color: white;
-position: sticky;
+background-color: darkred;
 top: 0;
-outline: 0.5em solid darkred; /*the type of border for the box around the navigation bar and the size of the border line and the colour*/
-padding: 0.5em; /*this creates space between navigation buttons and the border*/
+padding: 0.3em; /*this creates space between navigation buttons and the border*/
 outline-offset: 0.5em;
+justify-content: center;
+align-content: center;
 }
 
 
 li{
 height: 25px;
 float: left;
-margin-right: 1px solid #cd202b;
-border-right: 1px solid #cd202b;
-padding: 0 12px;
+padding: 0.5em;
 
 }
 
 li:last-child{
-border-right: none;
 margin-right: 1px solid #cd202b;
 margin-inline-end: 1px solid #cd202b;
 
@@ -52,19 +51,20 @@ margin-inline-end: 1px solid #cd202b;
 
 li a{
 text-decoration: none;
-color: #ccc;
+color: white;
 font: 25px/1 'Roboto', sans-serif;
 text-transform: uppercase;
-transition: all 0.6s ease;
+transition: all 0.5s ease;
 }
 
 li a:hover{
-color: #cd202b;
+color: #868b8a;
 }
 
 li.active a{
 font-weight: bold;
-color: #333;
+font-size: 2em;
+color: rgb(15, 0, 0);
 }
 
 
@@ -79,3 +79,75 @@ letter-spacing: -1px;
 word-spacing: -2px;
 }
 
+.footer{
+clear: left;
+margin-bottom: 0;
+width: 100%;
+height: 100px;
+background-color: darkred;
+display: flex;
+justify-content: center;
+text-transform: uppercase;
+text-decoration: none;
+color: white;
+font: 25px 'Roboto', sans-serif;
+right: 0;
+bottom: 0;
+left: 0;
+}
+
+.header{
+margin-top: -36px;
+width: 100%;
+height: 100px;
+background-color: darkred;
+justify-content: center;
+align-content: center;
+}
+
+.leftColumn{
+width: 50%;
+height: 400px;
+float: left;
+background-color: rgb(84, 83, 87);
+}
+.rightColumn{
+width: 50%;
+height: 400px;
+float: right;
+background-color: rgb(116, 116, 119);
+}
+
+.leftColumn:hover{
+color: #fcfdfd;
+}
+
+.rightColumn:hover{
+    color: #fcfdfd;
+}
+
+.image{
+    font-family: 'Playfair Display', serif;
+    font-size: 0.5em;
+    width: 300px;
+    height: 200px;
+    margin: 0 5px;
+    position: relative;
+    border: 2px solid #cd202b;
+}
+
+.image-thumbnail{
+width: 100%;
+height: 100%;
+}
+
+.image:hover{
+position: absolute;
+z-index: 5;
+display: block;
+background: #000;
+color: #fff;
+text-decoration: darkred;
+text-align: center;
+
+}
