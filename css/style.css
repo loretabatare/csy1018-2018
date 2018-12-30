@@ -1,157 +1,157 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Kanit');
-body{
-height: 50%;
-margin: 0;
-font-family: 'Playfair Display', serif;
-font-size: 1.3em;
-background-color: #c4cac9;
+body/* tag defines the document's body*/{ 
+height: 50%; /*Specifies the height of the content area. */
+margin: 0;/*Sets values the thickness of the margin area.*/
+font-family: 'Playfair Display', serif;/*Specifies a prioritized list of font family names or generic family namesThis is the font for the page. */
+font-size: 1.3em;/*Indicates the desired height of glyphs from the font.*/
+background-color: #c4cac9;/*This sets the background colour of the content area. */
 }
 
-*{
-margin: 0;
-padding: 0;
+*/*This selects all elements*/{
+margin: 0;/*Shorthand property to set values the thickness of the margin area in the cotent area.*/
+padding: 0;/* Shorthand property to set values the thickness of the padding area for the content area.*/
 }
 
-nav {
-margin: 30px;
-display: flex;
-justify-content: center;
+nav /*defines a set of navigation links at the top of the page*/{
+margin: 30px;/*Shorthand property to set values the thickness of the margin area for the navigation bar. */
+display: flex;/*This determines what type of boxes will be gnerated for the element, flex is a cobination of float and position*/
+justify-content: center;/*tThis aligns items along the main axis of the current line of the flex container, in this case at the top of the page in the center*/
 align-items: center;
-flex-direction: row;
-background: none;
+flex-direction: row;/*This defines how items are placed in the flex container*/
+background: none;/*property for setting most background properties at the same place in the styles sheet*/
 }
 
-ul{
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: darkred;
-top: 0;
+ul/*unordered list*/{
+list-style-type: none;/*this is used to construct the default contents of a lists items maker*/
+margin: 0;/*this sets the value of the thickness for the margin area for the list cotent - navigaion bar*/
+padding: 0;/*this sets the padding thickness for the list*/
+overflow: hidden;/*this is a setting for overflow-x and overflow-y*/
+background-color: darkred;/*this sets the background colour of the element in this case the background colour for the navigation bar*/
+top: 0;/*sets the top margin edge for the positioned box - navigation box*/
 padding: 0.3em; /*this creates space between navigation buttons and the border*/
-outline-offset: 0.5em;
-justify-content: center;
-align-content: center;
+outline-offset: 0.5em;/*this is a box with an outline around it. The outline is the line that is drawn around an element, outside the borer edge*/
+justify-content: center;/*aligns the flex items at the center of the container*/
+align-content: center;/*Aligns a flex container’s lines within the flex container*/
 }
 
 
-li{
-height: 25px;
-float: left;
-padding: 0.5em;
+li/*this is a ordered list*/{
+height: 25px; /*this determines the height of the list in the content area*/
+float: left;/*this specifies how the box should be floated*/
+padding: 0.5em;/*this creates space between the list items*/
 
 }
 
-li:last-child{
-margin-right: 1px solid #cd202b;
-margin-inline-end: 1px solid #cd202b;
+li:last-child/*this element allows me to target the lst element directly inside its containig element*/{
+margin-right: 1px solid #cd202b; /*this sets a margin to the right in  solid red colour next to the first item in the list*/
+margin-inline-end: 1px solid #cd202b;/*this sets a margin at the end of the list, which would be next to the last item on the list  */
 
 }
 
-li a{
-text-decoration: none;
-color: white;
-font: 25px/1 'Roboto', sans-serif;
-text-transform: uppercase;
-transition: all 0.5s ease;
+li a /*this element is used to show when a certain item in the list is active when you hover over it with the cursor*/{
+text-decoration: none; /*the decorations applied to the font, in this case I haven't used any.*/
+color: white;/*This is the colour of the text*/
+font: 25px/1 'Roboto', sans-serif;/*the font of the text inside the navigation bar/list*/
+text-transform: uppercase;/*when its active it will transform the whole word into uppercases*/
+transition: all 0.5s ease;/*this is the time of how long the transition will happen for when you hover over the word in the navigation bar*/
 }
 
-li a:hover{
-color: #868b8a;
+li a:hover/*this is the element tag for the active feature*/{
+color: #868b8a;/*this is the colour of the text when its active while hovering over*/
 }
 
-li.active a{
-font-weight: bold;
-font-size: 2em;
-color: rgb(15, 0, 0);
+li.active a/*this is the elemt tag when you click on a specific element in the list*/{
+font-weight: bold;/*this transforms the font a certain navigation item is active/accessed*/
+font-size: 2em;/*this is the size that the font will transform into when its active*/
+color: rgb(15, 0, 0);/*the colour of the word in the list when its active*/
 }
 
 
 
-h1{
-font-size: 3.2em;
-font-family: 'Kanit', sans-serif;
-display: block;
-text-align: center;
-color: #111111;
-letter-spacing: -1px;
-word-spacing: -2px;
+h1/*this is an element tag for the first heading of the page*/{
+font-size: 3.2em;/*the font size of the heading*/
+font-family: 'Kanit', sans-serif;/*the font of the heading*/
+display: block;/*this is a combination of float and position and this determines how the text will be displayed*/
+text-align: center;/*this alligns the text to the center of the page*/
+color: #111111;/*this is the colour of the heading*/
+letter-spacing: -1px;/*this is the sapcing between the leters in the heading*/
+word-spacing: -2px;/*this is the spacing between each word in the heading*/
 }
 
-.footer{
-clear: left;
-margin-bottom: 0;
-width: 100%;
-height: 100px;
-background-color: darkred;
-display: flex;
-justify-content: center;
-text-transform: uppercase;
-text-decoration: none;
-color: white;
-font: 25px 'Roboto', sans-serif;
-right: 0;
-bottom: 0;
-left: 0;
-position: sticky;
-overflow-y: scroll;
+.footer/*this is the footer which is placed at the bottom of the page and contains the navigation and the contacts*/{
+clear: left/*this spcifies on which sides of an element floating elements are not allowed to float, in this case to the left*/;
+margin-bottom: 0;/*this determined the value of the nargin at the bootm of the footer*/
+width: 100%;/*this is the width of the footer, its 100% which covers the bottom of the page */
+height: 100px;/*this is the height of the footer*/
+background-color: darkred;/*this is the background colour of the footer*/
+display: flex;/*this deteremines what boxes are generated for th footer*/
+justify-content: center;/*this alligns the content inside the footer to the center*/
+text-transform: uppercase;/*all the content inside the footer will be in uppercases*/
+text-decoration: none;/*the text decoration for the items inside the footer*/
+color: white;/*the colour of the text which is inside the footer*/
+font: 25px 'Roboto', sans-serif;/*the font of the text that is inside the footer*/
+right: 0;/*this spcifies how far the cnotent in the footer is placed*/
+bottom: 0;/*this spcifies how far the cnotent in the footer is placed*/
+left: 0;/*this spcifies how far the cnotent in the footer is placed*/
+position: sticky;/*this makes sure th footer is always visible when scroling through the page and always on the bottom*/
+overflow-y: scroll;/*this creates a scroll bar for the footer*/
 }
 
-footer::-webkit-scrollbar {
-display: none;
+footer::-webkit-scrollbar/*this is a scrollbar for the footer*/ {
+display: none;/*the scrollbar will not be visible*/
 }
 
-.header{
-margin-top: -36px;
-width: 100%;
-height: 100px;
-background-color: darkred;
-justify-content: center;
-align-content: center;
+.header/*this is an element class*/{
+margin-top: -36px;/*this sets the margin for the top of the header element*/
+width: 100%;/*this sets the width for the class header element*/
+height: 100px;/*this sets the height of the header class element */
+background-color: darkred;/*this is the background colour of the header element*/
+justify-content: center;/*this aligns all items inside the header class to the center*/
+align-content: center;/*this aligns all the content inside the header class to the center */
 }
 
-.leftColumn{
-width: 25%;
-height: 400px;
-float: left;
-background-color: rgb(84, 83, 87);
-font-size: 1em;
-font-family: 'Kanit', sans-serif;
-text-align: center;
-color: #111111;
-letter-spacing: -1px;
-word-spacing: -2px;
+.leftColumn/*this an elemnt class containng text*/{
+width: 25%;/*this is the width of the column box*/
+height: 400px;/*this is the height of the column box*/
+float: left;/*this makes the column float to the left*/
+background-color: rgb(84, 83, 87);/*this is the backgroud colour of the coloum */
+font-size: 1em;/*this is the font size for the text that is inside the coloumn*/
+font-family: 'Kanit', sans-serif;/*this is the font style for the text inside the column*/
+text-align: left;/*this aligns the text inside the column to the left side of the coloumn*/
+color: #111111;/*this is the colour of the text inside the left coloumn*/
+letter-spacing: -1px;/*this is the spacing between letters inside the left column*/
+word-spacing: -2px;/*this is the spacing between the words inside the left column*/
 }
-.rightColumn{
-width: 25%;
-height: 400px;
-float: right;
-background-color: rgb(116, 116, 119);
-font-size: 1em;
-font-family: 'Kanit', sans-serif;
-text-align: center;
-color: #111111;
-letter-spacing: -1px;
-word-spacing: -2px;
-}
-
-.leftColumn:hover{
-color: #fcfdfd;
+.rightColumn/*this is the right column which is anoter elemnt class containinhg text */{
+width: 25%;/*this sets the width of the column */
+height: 400px;/*this sets the height of the column*/
+float: right;/*this makes the column float to the right side of the page*/
+background-color: rgb(116, 116, 119);/*this is the background colour of the column*/
+font-size: 1em;/*this is the font size of the text inside the column */
+font-family: 'Kanit', sans-serif;/*this is the font style for the text that is inside the column*/
+text-align: right;/*this aligns the content inside to the right edge*/
+color: #111111;/*this is the colour of the text inside the column*/
+letter-spacing: -1px;/*this is the spacing between the letters inside the column*/
+word-spacing: -2px;/*this is the spacing between eaxh word inside the column*/
 }
 
-.rightColumn:hover{
-color: #fcfdfd;
+.leftColumn:hover/*this shows an effect that the left column is active when hovered over*/{
+color: #fcfdfd;/*this is the colour of the text when its active*/
 }
 
-h2{
-font-size: 2em;
-font-family: 'Kanit', sans-serif;
-display: grid;
-text-align: center;
-color: #111111;
-letter-spacing: -1px;
-word-spacing: -2px; 
+.rightColumn:hover/*this shows that the right column is actrive when its hovered over*/{
+color: #fcfdfd;/*this is the colour of which the text turns when its active*/
+}
+
+h2/*this is the second heading inside the page under heading 1*/{
+    font-size: 2em;/*this is the font size of the heading*/
+    font-family: 'Kanit', sans-serif;/*this is the font style of the heading*/
+    display: grid;/*this divides the page (heading) into a region which helps to defin the size, position and layer between parts of te HTML*/
+    text-align: center;/*this aligns the text inside the heading 2 to the center*/
+    color: #111111;/*this is the colour of the text inside heading 2*/
+    letter-spacing: -1px;/*this is the spacing between each letter inside the heading 2*/
+    word-spacing: -2px; /*this is the spacing between each word inside he heading 2*/
 }
 
 
